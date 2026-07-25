@@ -1,65 +1,161 @@
-==============================
-         RXLAUNCHER
-==============================
+<h1 align="center">RxLauncher</h1>
 
-Professional Minecraft Launcher
-Optimized for Android Devices
+<p align="center">
+<img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" width="140" alt="RxLauncher Logo">
+</p>
 
-Version: v1.0
+<p align="center">
+A modern Minecraft: Java Edition Launcher for Android.
+</p>
 
-Owner & Developer:
-Priyanshu
+<p align="center">
+<img src="https://img.shields.io/badge/Android-7.0+-brightgreen">
+<img src="https://img.shields.io/badge/Java-21-blue">
+<img src="https://img.shields.io/badge/Minecraft-Java-success">
+<img src="https://img.shields.io/github/license/RXLauncherTeam/RxLauncher">
+</p>
 
-==============================
-FEATURES
-==============================
+---
 
-✓ Fast Launch Speed
-✓ Smooth UI Experience
-✓ Custom Controls
-✓ Discord Integration
-✓ FPS Optimizations
-✓ Modern Gaming Interface
-✓ Custom Themes
-✓ Execute .JAR Support
-✓ Game Directory Access
-✓ AMOLED Dark Theme
-✓ Optimized Rendering
-✓ Professional Launcher Design
+# 🚀 Features
 
-==============================
-IMPORTANT
-==============================
+- ✅ Minecraft Java Edition Support
+- ✅ Fabric Loader
+- ✅ Forge Support
+- ✅ NeoForge Support
+- ✅ Ely.by Account Login
+- ✅ Microsoft Account Login
+- ✅ Offline Login
+- ✅ Java 8 / 17 / 21 Runtime
+- ✅ Custom Runtime Manager
+- ✅ FPS Overlay
+- ✅ Custom Themes
+- ✅ Landscape Mode
+- ✅ Fullscreen Gameplay
+- ✅ Custom Controls
+- ✅ Performance Optimizations
+- ✅ Automatic Version Installation
+- ✅ Separate Game Directories
+- ✅ Resource Pack Support
+- ✅ Shader Support
+- ✅ Mod Support
 
-• Use latest version only
-• Old versions may stop working
-• Keep Java runtime updated
-• Join Discord for updates
+---
 
-==============================
-DOWNLOAD
-==============================
+# 📥 Download
 
-GitHub Releases:
-https://github.com/ps736364728-star/rxlaunche/releases
+Download the latest version from the Releases page.
 
-==============================
-INSTALLATION
-==============================
+https://github.com/RXLauncherTeam/RxLauncher/releases
 
-1. Download RXLauncher APK
-2. Enable Unknown Sources
-3. Install APK
-4. Open RXLauncher
-5. Enjoy Gaming
+---
 
-==============================
-COPYRIGHT
-==============================
+# 🛠 Building
 
-RXLauncher © 2026
-All Rights Reserved
+Clone the repository
 
-Powered by PojavLauncher
-Modified & Optimized by Priyanshu
-==============================
+```bash
+git clone https://github.com/RXLauncherTeam/RxLauncher.git
+```
+
+Open the project
+
+```bash
+cd RxLauncher
+```
+
+Build APK
+
+```bash
+./gradlew assembleDebug
+```
+
+Release APK
+
+```bash
+./gradlew assembleRelease
+```
+
+---
+
+# 📱 Requirements
+
+• Android 7.0+
+• OpenGL ES 3.0+
+• 4GB RAM Recommended
+• Internet Connection
+
+---
+
+# 📂 Project Structure
+
+```
+app/
+gradle/
+scripts/
+runtime/
+LICENSE
+README.md
+build.gradle
+settings.gradle
+```
+
+---
+
+# 🎮 Supported Versions
+
+- Release
+- Snapshot
+- Alpha
+- Beta
+- Forge
+- Fabric
+- NeoForge
+
+---
+
+# 📸 Screenshots
+
+(Add launcher screenshots here)
+
+---
+
+# 🐞 Bug Reports
+
+Please create an Issue with:
+
+- Device Name
+- Android Version
+- Launcher Version
+- Crash Log
+
+---
+
+# 🤝 Contributing
+
+Pull Requests are welcome.
+
+For major changes please open an issue first.
+
+---
+
+# 📜 License
+
+GPL-3.0 License
+
+---
+
+# ❤️ Credits
+
+- PojavLauncher Team
+- LWJGL
+- OpenJDK
+- GL4ES
+- Mesa3D
+- Minecraft Community
+
+---
+
+# ⭐ Support
+
+If you like this project, don't forget to Star ⭐ the repository.
