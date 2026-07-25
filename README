@@ -1,161 +1,18 @@
 <h1 align="center">RxLauncher</h1>
 
 <p align="center">
-<img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" width="140" alt="RxLauncher Logo">
+<img src="https://raw.githubusercontent.com/RXLauncherTeam/RxLauncher/main/assets/logo.png" width="140">
 </p>
 
 <p align="center">
-A modern Minecraft: Java Edition Launcher for Android.
-</p>
-
-<p align="center">
-<img src="https://img.shields.io/badge/Android-7.0+-brightgreen">
-<img src="https://img.shields.io/badge/Java-21-blue">
-<img src="https://img.shields.io/badge/Minecraft-Java-success">
+<img src="https://img.shields.io/github/actions/workflow/status/RXLauncherTeam/RxLauncher/android.yml?label=Android%20CI">
+<img src="https://img.shields.io/github/stars/RXLauncherTeam/RxLauncher?style=flat">
+<img src="https://img.shields.io/github/forks/RXLauncherTeam/RxLauncher?style=flat">
+<img src="https://img.shields.io/github/issues/RXLauncherTeam/RxLauncher">
 <img src="https://img.shields.io/github/license/RXLauncherTeam/RxLauncher">
+<img src="https://img.shields.io/badge/Android-7.0+-brightgreen">
+<img src="https://img.shields.io/badge/Minecraft-Java-success">
+<img src="https://img.shields.io/badge/Java-21-blue">
+<img src="https://img.shields.io/badge/Fabric-Supported-orange">
+<img src="https://img.shields.io/badge/Forge-Supported-red">
 </p>
-
----
-
-# 🚀 Features
-
-- ✅ Minecraft Java Edition Support
-- ✅ Fabric Loader
-- ✅ Forge Support
-- ✅ NeoForge Support
-- ✅ Ely.by Account Login
-- ✅ Microsoft Account Login
-- ✅ Offline Login
-- ✅ Java 8 / 17 / 21 Runtime
-- ✅ Custom Runtime Manager
-- ✅ FPS Overlay
-- ✅ Custom Themes
-- ✅ Landscape Mode
-- ✅ Fullscreen Gameplay
-- ✅ Custom Controls
-- ✅ Performance Optimizations
-- ✅ Automatic Version Installation
-- ✅ Separate Game Directories
-- ✅ Resource Pack Support
-- ✅ Shader Support
-- ✅ Mod Support
-
----
-
-# 📥 Download
-
-Download the latest version from the Releases page.
-
-https://github.com/RXLauncherTeam/RxLauncher/releases
-
----
-
-# 🛠 Building
-
-Clone the repository
-
-```bash
-git clone https://github.com/RXLauncherTeam/RxLauncher.git
-```
-
-Open the project
-
-```bash
-cd RxLauncher
-```
-
-Build APK
-
-```bash
-./gradlew assembleDebug
-```
-
-Release APK
-
-```bash
-./gradlew assembleRelease
-```
-
----
-
-# 📱 Requirements
-
-• Android 7.0+
-• OpenGL ES 3.0+
-• 4GB RAM Recommended
-• Internet Connection
-
----
-
-# 📂 Project Structure
-
-```
-app/
-gradle/
-scripts/
-runtime/
-LICENSE
-README.md
-build.gradle
-settings.gradle
-```
-
----
-
-# 🎮 Supported Versions
-
-- Release
-- Snapshot
-- Alpha
-- Beta
-- Forge
-- Fabric
-- NeoForge
-
----
-
-# 📸 Screenshots
-
-(Add launcher screenshots here)
-
----
-
-# 🐞 Bug Reports
-
-Please create an Issue with:
-
-- Device Name
-- Android Version
-- Launcher Version
-- Crash Log
-
----
-
-# 🤝 Contributing
-
-Pull Requests are welcome.
-
-For major changes please open an issue first.
-
----
-
-# 📜 License
-
-GPL-3.0 License
-
----
-
-# ❤️ Credits
-
-- PojavLauncher Team
-- LWJGL
-- OpenJDK
-- GL4ES
-- Mesa3D
-- Minecraft Community
-
----
-
-# ⭐ Support
-
-If you like this project, don't forget to Star ⭐ the repository.
