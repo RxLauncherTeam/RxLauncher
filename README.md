@@ -1,13 +1,6 @@
-```{=html}
-<h1 align="center">
-```
-RxLauncher
-```{=html}
-</h1>
-```
-`<p align="center">
-  <img src="assets/20260729_222949.png" width="150" alt="RXLauncher Logo">
-</p>
+<h1 align="center">RxLauncher</h1>
+
+<img src="assets/20260729_222949.png" align="left" width="130" height="150" alt="RxLauncher logo">
 
 [![Android
 CI](https://github.com/RXLauncherTeam/RXLauncher/workflows/Android%20CI/badge.svg)](https://github.com/RXLauncherTeam/RXLauncher/actions)
