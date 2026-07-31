@@ -2,15 +2,6 @@
 
 <img src="assets/20260729_222949.png" align="left" width="130" height="150" alt="RxLauncher logo">
 
-[![Android
-CI](https://github.com/RXLauncherTeam/RXLauncher/workflows/Android%20CI/badge.svg)](https://github.com/RXLauncherTeam/RXLauncher/actions)
-[![GitHub commit
-activity](https://img.shields.io/github/commit-activity/m/RXLauncherTeam/RXLauncher)](https://github.com/RXLauncherTeam/RXLauncher/actions)
-[![Crowdin](https://badges.crowdin.net/RXLauncher/localized.svg)](https://crowdin.com/project/RXLauncher)
-[![Discord](https://img.shields.io/discord/724163890803638273.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.com/invite/aenk3EUvER)
-[![Twitter
-Follow](https://img.shields.io/twitter/follow/plaunchteam?color=blue&style=flat-square)](https://twitter.com/PLaunchTeam)
-
 *From [Boardwalk](https://github.com/zhuowei/Boardwalk)'s ashes here
 comes RXLauncher!*
 
