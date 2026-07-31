@@ -30,7 +30,7 @@ For more details, check out our [wiki](https://rxlauncherr.netlify.app/)!
 
 ## Introduction
 
-* PojavLauncher is a Minecraft: Java Edition launcher for Android and iOS based on [Boardwalk](https://github.com/zhuowei/Boardwalk)
+* RxLauncher is a Minecraft: Java Edition launcher for Android and iOS based on [Boardwalk](https://github.com/zhuowei/Boardwalk)
 * This launcher can launch almost all available Minecraft versions ranging from rd-132211 to 1.21 snapshots (including Combat Test versions)
 * Modding via Forge and Fabric are also supported.
 * This repository contains source code for Android. For iOS/iPadOS, check out [PojavLauncher_iOS](https://github.com/PojavLauncherTeam/PojavLauncher_iOS).
@@ -40,17 +40,6 @@ For more details, check out our [wiki](https://rxlauncherr.netlify.app/)!
 You can get RxLauncher via three methods:
 
 1. **Releases:** Download the prebuilt app from our [stable releases](https://github.com/RxLauncherTeam/RxLauncher/releases) or [automatic builds](https://github.com/RxLauncherTeam/RxLauncher/actions).
-
-## Building
-
-### Quick Build (Recommended)
-
-The easiest way to build PojavLauncher is to use the pre-built JREs provided by our CI.
-
-1. Clone the repository: `git clone https://github.com/PojavLauncherTeam/PojavLauncher.git`
-2. Build the launcher: `./gradlew :app_pojavlauncher:assembleDebug` (Use `gradlew.bat` on Windows)
-
-The built APK will be located in `app_pojavlauncher/build/outputs/apk/debug/`.
 
 ### Detailed Build
 
@@ -98,7 +87,7 @@ See our [issue tracker](https://github.com/PojavLauncherTeam/PojavLauncher/issue
 
 ## FAQ
 
-See our [wiki](https://pojavlauncherteam.github.io/) for more information.
+See our [wiki](https://rxlauncherr.netlify.app/) for more information.
 
 ## Contributing
 
@@ -112,7 +101,7 @@ For support, please join our [Discord server](https://discord.com/invite/aenk3EU
 
 ## License
 
-PojavLauncher is licensed under [GNU LGPLv3](https://github.com/PojavLauncherTeam/PojavLauncher/blob/v3_openjdk/LICENSE).
+RxLauncher is licensed under [GNU LGPLv3](https://github.com/PojavLauncherTeam/PojavLauncher/blob/v3_openjdk/LICENSE).
 
 ## Credits & Dependencies
 
@@ -140,4 +129,4 @@ Future plans include:
 * Improving stability and performance.
 * Enhancing the mod installation experience.
 
-We welcome community feedback and suggestions for our roadmap.  Please feel free to open a feature request in our [issue tracker](https://github.com/PojavLauncherTeam/PojavLauncher/issues).
+We welcome community feedback and suggestions for our roadmap.  Please feel free to open a feature request in our [issue 
