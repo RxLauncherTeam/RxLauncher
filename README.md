@@ -1,4 +1,4 @@
-<h1 align="center">PojavLauncher</h1>
+<h1 align="center">RxLauncher</h1>
 
 <img src="https://github.com/PojavLauncherTeam/PojavLauncher/blob/v3_openjdk/app_pojavlauncher/src/main/assets/pojavlauncher.png" align="left" width="130" height="150" alt="PojavLauncher logo">
 
