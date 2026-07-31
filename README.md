@@ -1,7 +1,17 @@
-# RxLauncher
+<p align="center">
+  <img src="assets/standard%20(1).gif" alt="RxLauncher hero banner" style="max-width:100%; height:auto; border-radius:6px;" />
+</p>
+
+<h1 align="center">RxLauncher</h1>
 
 <p align="center">
-  <img src="assets/20260729_222949.png" alt="RxLauncher logo" width="130" height="150" />
+  <img src="assets/20260729_222949.png" alt="RxLauncher logo" width="130" />
+</p>
+
+<p align="center">
+  <a href="https://discord.gg/9KYDqkuSc3" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/%F0%9F%92%AC%20Join%20the%20RxLauncher%20Community%20on%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="💬 Join the RxLauncher Community on Discord" />
+  </a>
 </p>
 
 [![Android](https://img.shields.io/badge/Platform-Android-brightgreen.svg?style=flat-square)](https://github.com/RxLauncherTeam/RxLauncher)
@@ -33,7 +43,7 @@ For extended documentation see the project wiki: https://github.com/RxLauncherTe
 
 ## Introduction
 
-RxLauncher is an Android launcher that runs Minecraft Java editions on Android devices by bundling mobile OpenJDK builds and necessary native libraries. It supports multiple Minecraft versions and mod loaders (Fabric, Forge, NeoForge), provides a mod installer, and offers an improved controls and input pipeline for mobile devices.
+RxLauncher is an Android launcher that runs Minecraft Java editions on Android devices by bundling mobile OpenJDK builds and necessary native libraries. It supports multiple Minecraft versions and[...]
 
 ## Getting RxLauncher
 
@@ -55,7 +65,7 @@ chmod +x gradlew
 
 On Windows use `gradlew.bat` instead of `gradlew`.
 
-Note: This quick path assumes any required submodules/content (JRE artifacts, native libs) are already present or will be downloaded by Gradle. See the Detailed Build section below for a reproducible build.
+Note: This quick path assumes any required submodules/content (JRE artifacts, native libs) are already present or will be downloaded by Gradle. See the Detailed Build section below for a reproduci[...]
 
 ## Building
 
@@ -136,7 +146,7 @@ We welcome contributions of any kind: code, documentation, translations, bug rep
 - Fork the repository, create a topic branch, and open a pull request describing your changes.
 - Use clear commit messages and include testing steps in the PR description.
 
-Code changes should follow the existing style and keep the core functionality unchanged unless the change clearly fixes bugs or improves stability. For large changes, open an issue first to discuss the design.
+Code changes should follow the existing style and keep the core functionality unchanged unless the change clearly fixes bugs or improves stability. For large changes, open an issue first to discu[...]
 
 ## Support
 
@@ -176,7 +186,7 @@ Community feedback is welcome — open issues or start discussions in the reposi
   assets/                    images and static assets (app icons, screenshots)
   build.gradle               top-level Gradle file and build configuration
   gradlew, gradlew.bat       Gradle wrapper
-  settings.gradle            Gradle settings (note: this project currently sets rootProject.name to 'PojavLauncher' and includes modules named 'app_pojavlauncher' — consider renaming to 'RxLauncher' for consistency)
+  settings.gradle            Gradle settings (note: this project currently sets rootProject.name to 'PojavLauncher' and includes modules named 'app_pojavlauncher' — consider renaming to 'RxLaun[...]
   LICENSE                    project license (LGPLv3)
   README.md                  this documentation
   scripts/                   build helper scripts (language list generator, etc.)
@@ -184,12 +194,12 @@ Community feedback is welcome — open issues or start discussions in the reposi
 ```
 
 How it fits together
-- Gradle builds the native JRE artifacts and the Android app modules. Modules referenced in settings.gradle (for example `:jre_lwjgl3glfw`, `:app_pojavlauncher`) are the build targets that produce the JRE stubs and the Android app. If those directories are missing, initialize submodules or fetch required external artifacts as described in the Detailed Build section.
+- Gradle builds the native JRE artifacts and the Android app modules. Modules referenced in settings.gradle (for example `:jre_lwjgl3glfw`, `:app_pojavlauncher`) are the build targets that produc[...]
 
 ## Notes and suggested improvements (no source changes applied by this commit)
 
-- Standardize internal project naming: several files (settings.gradle, module names) still reference "PojavLauncher". Rename modules and update build meta to `RxLauncher` where appropriate to avoid confusion. Keep a short migration note for attribution.
-- Verify the wiki link used in earlier README (there were variants like `rxlauncherr.netlify.app` and `RXLauncherteam.github.io`) — this README uses the canonical GitHub wiki and pages; if you prefer an external site, ensure the URL is correct.
+- Standardize internal project naming: several files (settings.gradle, module names) still reference "PojavLauncher". Rename modules and update build meta to `RxLauncher` where appropriate to avo[...]
+- Verify the wiki link used in earlier README (there were variants like `rxlauncherr.netlify.app` and `RXLauncherteam.github.io`) — this README uses the canonical GitHub wiki and pages; if you [...]
 - Consider adding a CONTRIBUTING.md and CODE_OF_CONDUCT.md to the repository to follow open-source best practices.
 - Add a simple CI badge for the main workflow (if present) to show build status.
 - If the project exposes a reproducible Docker or CI-based environment for building (useful for contributors), document it.
