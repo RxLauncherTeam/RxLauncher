@@ -5,7 +5,9 @@ RxLauncher
 ```{=html}
 </h1>
 ```
-`<img src="https://github.com/RXLauncherTeam/RXLauncher/blob/v3_openjdk/app_RXLauncher/src/main/assets/RXLauncher.png" align="left" width="130" height="150" alt="RXLauncher logo">`{=html}
+`<p align="center">
+  <img src="assets/20260729_222949.png" width="150" alt="RXLauncher Logo">
+</p>
 
 [![Android
 CI](https://github.com/RXLauncherTeam/RXLauncher/workflows/Android%20CI/badge.svg)](https://github.com/RXLauncherTeam/RXLauncher/actions)
