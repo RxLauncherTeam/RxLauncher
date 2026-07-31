@@ -1,3 +1,4 @@
+<meta name="google-site-verification" content="GwYtofooK4Y89IMxFbNN2mJdOfUQI3WYCGlPlQFWvSk" />
 <p align="center">
   <img src="assets/standard%20(1).gif" alt="RxLauncher hero banner" style="max-width:100%; height:auto; border-radius:6px;" />
 </p>
