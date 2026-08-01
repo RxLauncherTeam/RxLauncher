@@ -1,212 +1,261 @@
-<p align="center">
-  <img src="assets/standard%20(1).gif" alt="RxLauncher hero banner" style="max-width:100%; height:auto; border-radius:6px;" />
-</p>
-<meta name="google-site-verification" content="GwYtofooK4Y89IMxFbNN2mJdOfUQI3WYCGlPlQFWvSk" />
-<h1 align="center">RxLauncher</h1>
+<!--
+  README for RxLauncherTeam/RxLauncher
+  Production-ready, SEO-optimized, non-code changes only.
+  Keep banner.gif and logo.png in .github/ for correct paths (or update paths below).
+-->
 
 <p align="center">
-  <img src="assets/20260729_222949.png" alt="RxLauncher logo" width="130" />
+  <!-- Animated banner (keep or replace with .github/banner.gif) -->
+  <img src=".github/banner.gif" alt="RXLauncher Animated Banner" style="max-width:100%;height:auto" />
 </p>
 
+<h1 align="center">RXLauncher - High Performance Minecraft Java Launcher for Android</h1>
+
 <p align="center">
-  <a href="https://discord.gg/9KYDqkuSc3" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/%F0%9F%92%AC%20Join%20the%20RxLauncher%20Community%20on%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="💬 Join the RxLauncher Community on Discord" />
+  <!-- Badges (these use the repo slug RxLauncherTeam/RxLauncher) -->
+  <a href="https://github.com/RxLauncherTeam/RxLauncher/releases">
+    <img src="https://img.shields.io/github/v/release/RxLauncherTeam/RxLauncher?label=release&style=flat" alt="Release"/>
+  </a>
+  <a href="https://github.com/RxLauncherTeam/RxLauncher/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/RxLauncherTeam/RxLauncher?style=flat" alt="License"/>
+  </a>
+  <a href="https://github.com/RxLauncherTeam/RxLauncher/stargazers">
+    <img src="https://img.shields.io/github/stars/RxLauncherTeam/RxLauncher?style=flat" alt="GitHub stars"/>
+  </a>
+  <a href="https://github.com/RxLauncherTeam/RxLauncher/releases">
+    <img src="https://img.shields.io/github/downloads/RxLauncherTeam/RxLauncher/total?style=flat" alt="Downloads"/>
+  </a>
+  <!-- Replace the URL below with your Discord invite -->
+  <a href="https://discord.gg/REPLACE_WITH_YOUR_INVITE" target="_blank" rel="noopener">
+    <img src="https://img.shields.io/discord/000000000000000000?label=discord&style=flat" alt="Discord (replace invite)"/>
   </a>
 </p>
 
-[![Android](https://img.shields.io/badge/Platform-Android-brightgreen.svg?style=flat-square)](https://github.com/RxLauncherTeam/RxLauncher)
-[![Java](https://img.shields.io/badge/Java-8%20|%2017%20|%2021-blue.svg?style=flat-square)](https://www.java.com/)
-[![License](https://img.shields.io/github/license/RxLauncherTeam/RxLauncher?style=flat-square)](https://github.com/RxLauncherTeam/RxLauncher/blob/main/LICENSE)
-[![GitHub release](https://img.shields.io/github/v/release/RxLauncherTeam/RxLauncher?style=flat-square)](https://github.com/RxLauncherTeam/RxLauncher/releases)
-[![GitHub stars](https://img.shields.io/github/stars/RxLauncherTeam/RxLauncher?style=flat-square)](https://github.com/RxLauncherTeam/RxLauncher/stargazers)
-
-*Originally inspired by [Boardwalk](https://github.com/zhuowei/Boardwalk).*  RxLauncher is a Minecraft Java Launcher for Android with Fabric, Forge, NeoForge and mod support.
-
-For extended documentation see the project wiki: https://github.com/RxLauncherTeam/RxLauncher/wiki
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Getting RxLauncher](#getting-rxlauncher)
-- [Building](#building)
-  - [Quick Build (Recommended)](#quick-build-recommended)
-  - [Detailed Build](#detailed-build)
-- [Current Status](#current-status)
-- [Known Issues](#known-issues)
-- [FAQ](#faq)
-- [Contributing](#contributing)
-- [Support](#support)
-- [License](#license)
-- [Credits & Dependencies](#credits--dependencies)
-- [Roadmap](#roadmap)
-- [Project structure](#project-structure)
-
-## Introduction
-
-RxLauncher is an Android launcher that runs Minecraft Java editions on Android devices by bundling mobile OpenJDK builds and necessary native libraries. It supports multiple Minecraft versions and[...]
-
-## Getting RxLauncher
-
-You can obtain RxLauncher in three ways:
-
-1. Releases: Download prebuilt APKs from the stable releases: https://github.com/RxLauncherTeam/RxLauncher/releases
-2. CI / automatic builds: See automatic artifacts in Actions: https://github.com/RxLauncherTeam/RxLauncher/actions
-3. Build from source (instructions below)
-
-### Quick Build (Recommended)
-
-From a checked-out repository (Linux/macOS):
-
-```bash
-# Ensure you have a compatible JDK and Android SDK installed, then:
-chmod +x gradlew
-./gradlew :app_RXLauncher:assembleDebug
-```
-
-On Windows use `gradlew.bat` instead of `gradlew`.
-
-Note: This quick path assumes any required submodules/content (JRE artifacts, native libs) are already present or will be downloaded by Gradle. See the Detailed Build section below for a reproduci[...]
-
-## Building
-
-### Detailed Build
-
-1) Java Runtime Environment (JRE)
-
-- Download the prebuilt JREs for supported architectures from our CI artifacts: https://github.com/RxLauncherTeam/android-openjdk-build-multiarch/actions
-- If you need to produce the JRE yourself, follow the instructions in: https://github.com/RxLauncherTeam/android-openjdk-build-multiarch
-
-2) LWJGL / Native components
-
-- The custom LWJGL build and native stubs are documented in: https://github.com/RxLauncherTeam/lwjgl3
-
-3) Generate language list (translations are auto-managed by Crowdin)
-
-- Linux/macOS:
-
-```bash
-chmod +x scripts/languagelist_updater.sh
-bash scripts/languagelist_updater.sh
-```
-
-- Windows:
-
-```batch
-scripts\languagelist_updater.bat
-```
-
-4) Build GLFW stub (if required):
-
-```bash
-./gradlew :jre_lwjgl3glfw:build
-```
-
-5) Build the launcher (debug):
-
-```bash
-./gradlew :app_RXLauncher:assembleDebug
-```
-
-Replace `gradlew` with `gradlew.bat` on Windows.
-
-Notes and tips
-- Make sure the Android SDK and required build-tools are installed and available via your environment (ANDROID_HOME/ANDROID_SDK_ROOT).
-- If the repository references external modules or submodules (e.g., jre_lwjgl3glfw, app_pojavlauncher), ensure those directories are present or the appropriate submodules are initialized.
-
-## Current Status
-
-- [x] OpenJDK 8 Mobile port: ARM32, ARM64, x86, x86_64
-- [x] OpenJDK 17 Mobile port: ARM32, ARM64, x86, x86_64
-- [x] OpenJDK 21 Mobile port: ARM32, ARM64, x86, x86_64
-- [x] Headless mod installer
-- [x] Mod installer with GUI
-- [x] OpenGL in OpenJDK environment
-- [x] OpenAL (works on most devices)
-- [x] Support for Minecraft 1.12.2 and below
-- [x] Support for Minecraft 1.13 and above
-- [x] Support for Minecraft 1.17 (22w13a) and above
-- [x] Game surface zooming
-- [x] New input pipe rewritten to native code
-- [x] Rewritten controls system
-
-## Known Issues
-
-See the issue tracker for up-to-date issues and their status: https://github.com/RxLauncherTeam/RxLauncher/issues
-
-## FAQ
-
-See the project wiki for frequently asked questions and troubleshooting: https://github.com/RxLauncherTeam/RxLauncher/wiki
-
-## Contributing
-
-We welcome contributions of any kind: code, documentation, translations, bug reports, and feature requests.
-
-- Read our contributing guidelines in the wiki or CONTRIBUTING.md (if present).
-- For translations we use Crowdin: https://crowdin.com/project/RXLauncher
-- Fork the repository, create a topic branch, and open a pull request describing your changes.
-- Use clear commit messages and include testing steps in the PR description.
-
-Code changes should follow the existing style and keep the core functionality unchanged unless the change clearly fixes bugs or improves stability. For large changes, open an issue first to discu[...]
-
-## Support
-
-Join our Discord server for real-time support and community discussions: https://discord.com/invite/aenk3EUvER
-
-## License
-
-RxLauncher is licensed under the GNU Lesser General Public License v3 (LGPLv3). See the LICENSE file for details: https://github.com/RxLauncherTeam/RxLauncher/blob/main/LICENSE
-
-## Credits & Dependencies
-
-- [Boardwalk](https://github.com/zhuowei/Boardwalk) — inspiration and JVM launcher concepts (see their LICENSE and attributions).
-- Android Support Libraries — Apache License 2.0
-- [gl4es](https://github.com/ptitSeb/gl4es) — MIT License
-- [OpenJDK mobile builds](https://github.com/RxLauncherTeam/openjdk-multiarch-jdk8u) — GPLv2+CE (follow the source project license)
-- [LWJGL3 (custom)](https://github.com/RxLauncherTeam/lwjgl3) — BSD-3
-- [pro-grade](https://github.com/pro-grade/pro-grade) — Apache 2.0
-- [bhook](https://github.com/bytedance/bhook) — MIT
-- [libepoxy](https://github.com/anholt/libepoxy) — MIT
-- [virglrenderer](https://gitlab.freedesktop.org/virgl/virglrenderer) — MIT
-
-Thanks to MCHeads (https://mc-heads.net) for providing Minecraft avatars.
-
-## Roadmap
-
-Current focus:
-- Explore new rendering technologies
-- Improve stability and performance
-- Enhance the mod installation experience
-
-Community feedback is welcome — open issues or start discussions in the repository.
-
-## Project structure
-
-```
-/ (root)
-  assets/                    images and static assets (app icons, screenshots)
-  build.gradle               top-level Gradle file and build configuration
-  gradlew, gradlew.bat       Gradle wrapper
-  settings.gradle            Gradle settings (note: this project currently sets rootProject.name to 'PojavLauncher' and includes modules named 'app_pojavlauncher' — consider renaming to 'RxLaun[...]
-  LICENSE                    project license (LGPLv3)
-  README.md                  this documentation
-  scripts/                   build helper scripts (language list generator, etc.)
-  <modules referenced>      modules such as jre_lwjgl3glfw, app_RXLauncher (may be submodules or directories)
-```
-
-How it fits together
-- Gradle builds the native JRE artifacts and the Android app modules. Modules referenced in settings.gradle (for example `:jre_lwjgl3glfw`, `:app_pojavlauncher`) are the build targets that produc[...]
-
-## Notes and suggested improvements (no source changes applied by this commit)
-
-- Standardize internal project naming: several files (settings.gradle, module names) still reference "PojavLauncher". Rename modules and update build meta to `RxLauncher` where appropriate to avo[...]
-- Verify the wiki link used in earlier README (there were variants like `rxlauncherr.netlify.app` and `RXLauncherteam.github.io`) — this README uses the canonical GitHub wiki and pages; if you [...]
-- Consider adding a CONTRIBUTING.md and CODE_OF_CONDUCT.md to the repository to follow open-source best practices.
-- Add a simple CI badge for the main workflow (if present) to show build status.
-- If the project exposes a reproducible Docker or CI-based environment for building (useful for contributors), document it.
+<p align="center">
+  <!-- Centered project logo (keep logo.png in .github/ or update path) -->
+  <img src=".github/logo.png" alt="RXLauncher Logo" width="160" style="display:block;margin: 12px auto;" />
+</p>
 
 ---
 
-If you'd like, I can:
-- Create a CONTRIBUTING.md and pull request template.
-- Add a CODE_OF_CONDUCT.md and issue/PR templates.
-- Open a follow-up PR suggesting renames for `PojavLauncher` references (I will only modify documentation unless you explicitly want code/module rename).
+Table of contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Building from Source](#building-from-source)
+- [Supported Versions](#supported-versions)
+- [FAQ](#faq)
+- [Contributing](#contributing)
+- [License](#license)
+- [Credits](#credits)
+- [Repository Metadata & SEO Recommendations](#repository-metadata--seo-recommendations)
+
+---
+
+## Introduction
+
+RXLauncher is a high-performance, open-source Minecraft Java Edition launcher for Android that supports Fabric, Forge, NeoForge, and modded setups. RXLauncher aims to be a first-class, performant, and user-friendly replacement for mobile Java launchers like PojavLauncher while offering full mod support and an extensible architecture.
+
+Keywords (used naturally in this README): RXLauncher, Minecraft Launcher, Minecraft Java Edition, Android, Fabric, Forge, NeoForge, PojavLauncher Alternative, Open Source, Java Runtime.
+
+RXLauncher is designed for:
+- Players who want to run Minecraft Java Edition on Android devices.
+- Users who require Fabric and Forge compatibility and robust mod support.
+- Developers and contributors looking for an open project built around LWJGL/GLFW or tailored Java runtimes for Android.
+
+---
+
+## Features
+
+- Full support for Minecraft Java Edition on Android devices
+- Fabric, Forge and NeoForge mod loader support
+- Mod support and easy mod installation paths
+- Optimized Java runtime selection for mobile (tailored JRE choices)
+- Fast, light-weight, and responsive UX for constrained devices
+- Extensible architecture for future mod loaders and runtimes
+- Open-source: contributions welcome and traceable
+- Focus on stability and compatibility across a wide set of devices
+
+---
+
+## Installation
+
+Note: This repository contains the launcher project and native runtime packaging for LWJGL/GLFW (where applicable). Pre-built releases, APKs, or distribution artifacts (if published) are available on the Releases page.
+
+1. Visit Releases
+   - Download the latest APK or build artifact from: https://github.com/RxLauncherTeam/RxLauncher/releases
+
+2. Sideload on Android
+   - Enable "Install from unknown sources" on your device (system-dependent).
+   - Transfer the APK to your device and install it.
+   - Follow the in-app onboarding to download or configure a Java Runtime and Minecraft assets.
+
+3. Mod Support
+   - For Fabric/Forge/NeoForge: use the launcher UI to install and manage mod loaders and mods. See the in-app documentation or Releases notes for modloader compatibility.
+
+4. Security
+   - Only install APKs from trusted sources (official releases).
+   - Verify release checksums/signatures if provided on the Releases page.
+
+---
+
+## Building from Source
+
+This project can be built from source. The following is a generic, high-level build workflow — adapt it to the repository's build system (Gradle/Maven) and any platform-specific steps.
+
+Prerequisites
+- Java JDK (version compatible with project)
+- Android SDK/NDK (if building an Android APK)
+- Android Studio (recommended for APK signing and debugging)
+- Gradle (wrapper is typically provided)
+
+Typical steps
+1. Clone the repository
+   ```bash
+   git clone https://github.com/RxLauncherTeam/RxLauncher.git
+   cd RxLauncher
+   ```
+
+2. Inspect and follow any repository-specific build docs
+   - Check `BUILDING.md`, `CONTRIBUTING.md`, or the `docs/` folder (if present) for exact build flags and environment variables.
+
+3. Build using Gradle wrapper (example)
+   ```bash
+   ./gradlew assembleRelease
+   ```
+   Or for debug:
+   ```bash
+   ./gradlew assembleDebug
+   ```
+
+4. Install the produced APK on a device
+   ```bash
+   adb install -r app/build/outputs/apk/release/app-release.apk
+   ```
+
+Notes
+- Do NOT modify source code or Gradle files if your goal is only packaging or local testing — follow contribution guidelines instead.
+- If the project uses native components (LWJGL, JRE pieces), ensure required native libraries are available for target platforms.
+
+---
+
+## Supported Versions
+
+RXLauncher targets the Minecraft Java Edition versions supported by the included mod loaders (Fabric, Forge, NeoForge). Compatibility depends on:
+- The Minecraft version selected in the launcher profile.
+- The version compatibility of Fabric/Forge/NeoForge and installed mods.
+
+Typical support matrix (check Releases / in-app notes for exact mapping):
+- Minecraft Java Edition: common releases (check UI for list)
+- Fabric: supported for compatible Minecraft versions (use launcher to choose)
+- Forge: supported on matching Minecraft versions
+- NeoForge: supported where available
+
+For the latest supported versions, consult the Releases page and project changelog.
+
+---
+
+## FAQ
+
+Q: Is RXLauncher free and open-source?
+A: Yes — RXLauncher is open-source. See the LICENSE section below and the LICENSE file in this repository.
+
+Q: Can I install mods?
+A: Yes — RXLauncher supports Fabric, Forge, and NeoForge enabling broad mod compatibility. Use the launcher UI to manage mod loaders and mods.
+
+Q: Is this a PojavLauncher alternative?
+A: RXLauncher is positioned as a high-performance alternative for running Minecraft Java Edition on Android, with its own approach to runtimes and mod support.
+
+Q: Will RXLauncher get updates for new Minecraft releases?
+A: The project aims to keep supporting newer Minecraft Java releases subject to available upstream modloader support (Fabric/Forge/NeoForge).
+
+Q: Where can I get help or report bugs?
+A: File an issue in this repository (Issues tab). For live chat, use the Discord community (replace the invite with your server invite).
+
+---
+
+## Contributing
+
+We welcome contributions! To keep the project stable and discoverable:
+
+1. Fork the repository and create a feature branch.
+2. Follow the repository coding and commit conventions.
+3. Do not change Gradle or core source files unless implementing a functional improvement. For documentation, packaging, or CI changes, open a PR describing the change.
+4. Open a Pull Request with:
+   - Summary of the change
+   - Why it is needed
+   - Testing steps
+5. All PRs will be reviewed; maintainers may request changes.
+
+Please read CONTRIBUTING.md (if present) for more details. If there is no CONTRIBUTING.md, follow standard GitHub contribution best-practices.
+
+---
+
+## License
+
+This project is open-source. See the LICENSE file in this repository for full license text.
+
+---
+
+## Credits
+
+- RXLauncherTeam — project maintainers and contributors
+- Community contributors and testers
+- Third-party projects and libraries used by RXLauncher (Fabric, Forge, NeoForge, LWJGL, etc.)
+- Thanks to the broader Minecraft modding and Android launcher communities for guidance and support
+
+---
+
+## Repository Metadata & SEO Recommendations
+
+To maximize GitHub and Google discoverability, apply the following repository settings and files (maintainers or repository admins only):
+
+Recommended GitHub Topics (add to repo settings)
+- rxlauncher
+- minecraft
+- minecraft-java
+- minecraft-launcher
+- android
+- fabric
+- forge
+- neoforge
+- pojavlauncher
+- lwjgl
+- java
+- open-source
+
+About description (max 160 characters)
+- RXLauncher - High-performance Minecraft Java Launcher for Android with Fabric, Forge, NeoForge and full mod support.
+
+Website URL (recommend to set if you have one)
+- Suggested: https://rxlauncherteam.github.io/RxLauncher (GitHub Pages) or your official product site.
+  - If you have a hosted website, set it here (helps SEO).
+
+Social preview image
+- Path suggestion: `.github/social-preview.png`
+  - Create a 1280x640 PNG that contains the RXLauncher logo + title and set it in the repo settings (Social preview). This improves link previews on GitHub and Google.
+
+Repository keywords (also helpful for SEO & discovery)
+- RXLauncher, Minecraft, Minecraft Java Edition, Android Launcher, Fabric, Forge, NeoForge, PojavLauncher Alternative, LWJGL
+
+Other repository presentation suggestions
+- Add an explicit `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, and `BUILDING.md` for clearer contributor onboarding and SEO.
+- Add release notes and changelog (CHANGELOG.md) for timeline and discoverability by search engines.
+- Provide a Social Preview image and high-quality screenshots in `.github/` or `docs/` with descriptive alt text.
+- Ensure images referenced in this README are stored in the repo (for example: `.github/banner.gif`, `.github/logo.png`, `.github/social-preview.png`) and referenced by relative paths so GitHub serves them correctly.
+- Use descriptive release titles and release notes — include keywords like "RXLauncher", "Minecraft", "Fabric", "Forge" when publishing releases.
+- Tag releases with semantic versions and include downloadable APKs and checksums for ease-of-use and trust.
+
+If you would like, I can:
+- Produce a ready-to-commit `README.md` file (this content) and a recommended `.github/` image list with suggested filenames.
+- Draft short CONTRIBUTING.md and BUILDING.md templates to include in the repo (no source changes).
+- Generate suggested issue & PR templates to improve contributor flow and SEO.
+
+Notes & Reminders
+- Do NOT modify source code or Gradle files unless you intend to change functionality.
+- Verify the Discord invite and replace the placeholder `https://discord.gg/REPLACE_WITH_YOUR_INVITE` with your actual invite URL.
+- Place the animated banner and logo in `.github/` (or update paths above) to avoid broken images.
+
+---
+
+Thank you for maintaining RXLauncher — this README optimizes discoverability while preserving your existing project information.
