@@ -1,33 +1,34 @@
-import java.io.IOException
-plugins{
-    id 'com.android.application' version '8.7.2' apply false
-    id 'com.android.library' version '8.7.2' apply false
+plugins {
+    id 'java'
 }
 
-String getGitHash(String project) {
-    def command = Runtime.getRuntime().exec("git rev-list -1 HEAD " + project)
-    def returnCode = command.waitFor()
-    if (returnCode != 0) {
-        throw new IOException("Command 'getGitHash()' exited with " + returnCode)
+group = 'org.lwjgl.glfw'
+
+configurations.default.setCanBeResolved(true)
+
+jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    archiveBaseName = "lwjgl-glfw-classes"
+    destinationDirectory.set(file("../app_pojavlauncher/src/main/assets/components/lwjgl3/"))
+    if (gitUsed()){
+      File versionFile = file("../app_pojavlauncher/src/main/assets/components/lwjgl3/version")
+      versionFile.write(getGitHash(project.name))
     }
-    String gitCommitHash = command.inputStream.text.trim()
-    return gitCommitHash
+    from {
+        configurations.default.collect {
+            println(it.getName())
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+    exclude 'net/java/openjdk/cacio/ctc/**'
 }
 
-Boolean gitUsed() {
-    def returnCode = Runtime.getRuntime().exec("git rev-parse --is-inside-work-tree").waitFor()
-    switch(returnCode){
-        case 127:
-          println("git not found");
-          return false;
-          break;
-        case 128:
-          println("not inside a git repository");
-          return false;
-          break;
-        case 0:
-          return true;
-        default:
-          throw new IOException("Command 'gitUsed()' exited with " + returnCode)
-  }
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 }
