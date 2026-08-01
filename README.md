@@ -253,7 +253,7 @@ If you would like, I can:
 
 Notes & Reminders
 - Do NOT modify source code or Gradle files unless you intend to change functionality.
-- Verify the Discord invite and replace the placeholder `https://discord.gg/REPLACE_WITH_YOUR_INVITE` with your actual invite URL.
+- Verify the Discord invite and replace the placeholder `https://discord.gg/9KYDqkuSc3` with your actual invite URL.
 - Place the animated banner and logo in `.github/` (or update paths above) to avoid broken images.
 
 ---
