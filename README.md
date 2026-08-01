@@ -1,12 +1,12 @@
 <!--
   README for RxLauncherTeam/RxLauncher
   Production-ready, SEO-optimized, non-code changes only.
-  Keep banner.gif and logo.png in .github/ for correct paths (or update paths below).
+  Updated image paths and Discord invite per user request.
 -->
 
 <p align="center">
-  <!-- Animated banner (keep or replace with .github/banner.gif) -->
-  <img src=".github/banner.gif" alt="RXLauncher Animated Banner" style="max-width:100%;height:auto" />
+  <!-- Animated banner (using assets path provided by maintainer) -->
+  <img src="assets/standard%20(1).gif" alt="RXLauncher Animated Banner" style="max-width:100%;height:auto" />
 </p>
 
 <h1 align="center">RXLauncher - High Performance Minecraft Java Launcher for Android</h1>
@@ -25,15 +25,15 @@
   <a href="https://github.com/RxLauncherTeam/RxLauncher/releases">
     <img src="https://img.shields.io/github/downloads/RxLauncherTeam/RxLauncher/total?style=flat" alt="Downloads"/>
   </a>
-  <!-- Replace the URL below with your Discord invite -->
-  <a href="https://discord.gg/REPLACE_WITH_YOUR_INVITE" target="_blank" rel="noopener">
-    <img src="https://img.shields.io/discord/000000000000000000?label=discord&style=flat" alt="Discord (replace invite)"/>
+  <!-- Discord invite (updated) -->
+  <a href="https://discord.gg/9KYDqkuSc3" target="_blank" rel="noopener">
+    <img src="https://img.shields.io/badge/%F0%9F%92%AC%20Join%20the%20RxLauncher%20Community%20on%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Join Discord"/>
   </a>
 </p>
 
 <p align="center">
-  <!-- Centered project logo (keep logo.png in .github/ or update path) -->
-  <img src=".github/logo.png" alt="RXLauncher Logo" width="160" style="display:block;margin: 12px auto;" />
+  <!-- Centered project logo (using assets path provided by maintainer) -->
+  <img src="assets/20260729_222949.png" alt="RXLauncher Logo" width="160" style="display:block;margin: 12px auto;" />
 </p>
 
 ---
@@ -170,7 +170,7 @@ Q: Will RXLauncher get updates for new Minecraft releases?
 A: The project aims to keep supporting newer Minecraft Java releases subject to available upstream modloader support (Fabric/Forge/NeoForge).
 
 Q: Where can I get help or report bugs?
-A: File an issue in this repository (Issues tab). For live chat, use the Discord community (replace the invite with your server invite).
+A: File an issue in this repository (Issues tab). For live chat, use the Discord community (see the badge above).
 
 ---
 
