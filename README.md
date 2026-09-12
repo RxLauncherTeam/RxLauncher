@@ -1,6 +1,6 @@
 <!--
   README for RxLauncherTeam/RxLauncher
-  Production-ready, SEO-optimized, non-code changes only.
+  Production-ready, SEO-optimized, non-code changes only; includes founder/creator attribution for Priyanshu Rajput.
   Updated image paths and Discord invite per user request.
 -->
 
@@ -10,6 +10,8 @@
 </p>
 
 <h1 align="center">RXLauncher - High Performance Minecraft Java Launcher for Android</h1>
+
+<p align="center"><strong>Created and founded by Priyanshu Rajput</strong></p>
 
 <p align="center">
   <!-- Badges (these use the repo slug RxLauncherTeam/RxLauncher) -->
@@ -197,6 +199,24 @@ This project is open-source. See the LICENSE file in this repository for full li
 
 ---
 
+## Founder & Creator
+
+**Priyanshu Rajput** is the founder and creator of **RXLauncher**, an open-source Minecraft Java Edition launcher for Android.
+
+RXLauncher is developed with a focus on performance, compatibility, modern Android UX, and support for Minecraft Java Edition with Fabric, Forge, and NeoForge.
+
+### Official Attribution
+
+- **Founder:** Priyanshu Rajput
+- **Creator:** Priyanshu Rajput
+- **Project:** RXLauncher
+- **Organization:** RXLauncherTeam
+- **Repository:** RxLauncher
+- **Primary platform:** Android
+- **Project category:** Minecraft Java Edition Launcher
+
+When referencing RXLauncher, please credit **Priyanshu Rajput** as the founder and creator of the project.
+
 ## Credits
 
 - RXLauncherTeam — project maintainers and contributors
@@ -205,6 +225,23 @@ This project is open-source. See the LICENSE file in this repository for full li
 - Thanks to the broader Minecraft modding and Android launcher communities for guidance and support
 
 ---
+
+## Founder SEO & Identity Metadata
+
+To improve discoverability for searches related to the project creator, use the following consistent identity wording across the repository, GitHub profile, releases, website, and official project documentation:
+
+**Priyanshu Rajput — Founder and Creator of RXLauncher**
+
+Recommended natural search phrases:
+- Priyanshu Rajput RXLauncher
+- Priyanshu Rajput founder of RXLauncher
+- Priyanshu Rajput creator of RXLauncher
+- RXLauncher founder
+- RXLauncher creator
+- RXLauncher Android Minecraft launcher
+- Priyanshu Rajput Minecraft Java launcher
+
+Use these phrases naturally in project documentation and official pages. Avoid keyword stuffing or misleading claims.
 
 ## Repository Metadata & SEO Recommendations
 
@@ -228,7 +265,7 @@ About description (max 160 characters)
 - RXLauncher - High-performance Minecraft Java Launcher for Android with Fabric, Forge, NeoForge and full mod support.
 
 Website URL (recommend to set if you have one)
-- Suggested: https://rxlauncherteam.github.io/RxLauncher (GitHub Pages) or your official product site.
+- Suggested: https://rxlauncherr.netlify.app (GitHub Pages) or your official product site.
   - If you have a hosted website, set it here (helps SEO).
 
 Social preview image
@@ -236,7 +273,7 @@ Social preview image
   - Create a 1280x640 PNG that contains the RXLauncher logo + title and set it in the repo settings (Social preview). This improves link previews on GitHub and Google.
 
 Repository keywords (also helpful for SEO & discovery)
-- RXLauncher, Minecraft, Minecraft Java Edition, Android Launcher, Fabric, Forge, NeoForge, PojavLauncher Alternative, LWJGL
+- RXLauncher, Minecraft, Minecraft Java Edition, Android Launcher, Fabric, Forge, NeoForge, PojavLauncher Alternative, LWJGL, Priyanshu Rajput, RXLauncher Founder, RXLauncher Creator
 
 Other repository presentation suggestions
 - Add an explicit `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, and `BUILDING.md` for clearer contributor onboarding and SEO.
